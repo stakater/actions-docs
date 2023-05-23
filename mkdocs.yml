@@ -4,9 +4,9 @@ site_url: https://docs.stakater.com/actions/
 repo_url: https://github.com/stakater/actions-docs
 edit_uri: blob/main/content/
 use_directory_urls: false
+strict: true
 theme:
     name: material
-    prev_next_buttons_location: none
     logo: assets/images/favicon.svg
     favicon: assets/images/favicon.svg
     custom_dir: custom_theme/
