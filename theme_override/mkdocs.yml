@@ -5,5 +5,4 @@ repo_url: https://github.com/stakater/actions-docs
 edit_uri: blob/main/content/
 
 nav:
-    - Actions:
-        - index.md
+  - index.md

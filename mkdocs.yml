@@ -14,9 +14,6 @@ extra:
       find what they're searching for. With your consent, you're helping us to make
       our documentation better.
     title: Cookie consent
-  version:
-    default: latest
-    provider: mike
 extra_css:
 - stylesheets/extra.css
 markdown_extensions:
@@ -31,8 +28,7 @@ markdown_extensions:
     permalink: '#'
     title: On this page
 nav:
-- Actions:
-  - index.md
+- index.md
 plugins:
 - search
 - mermaid2
