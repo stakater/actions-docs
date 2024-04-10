@@ -1,17 +1,28 @@
 # Stakater Actions
 
-Stakater engineer the 
+Stakater engineer the
 
 - GitLab managed
 
 We create, support, and maintain all kinds of CI/CD technologies:
 
-- gitlab CI/CD
-- github actions
-- tekton
+- Gitlab CI/CD
+- GitHub Actions
+- Tekton
 - CircleCI
 - Concourse
 - Makefile
 - bash scripts
+- ArgoCD
+- FluxCD
+- Crossplane
 
 see for more info https://products.vshn.ch/appflow/index.html
+
+
+help you move away from clickops
+
+repeatable
+quality
+secure
+

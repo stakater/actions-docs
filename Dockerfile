@@ -1,4 +1,4 @@
-FROM python:3.11 as builder
+FROM python:3.12 as builder
 
 RUN pip3 install mkdocs-material mkdocs-mermaid2-plugin mkdocs-table-reader-plugin
 
@@ -12,7 +12,7 @@ COPY --chown=1001:root . .
 # build the docs
 RUN mkdocs build
 
-FROM nginxinc/nginx-unprivileged:1.24-alpine as deploy
+FROM nginxinc/nginx-unprivileged:1.25-alpine as deploy
 COPY --from=builder $HOME/application/site/ /usr/share/nginx/html/saap/
 COPY default.conf /etc/nginx/conf.d/
 
