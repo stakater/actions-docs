@@ -17,8 +17,6 @@ We create, support, and maintain all kinds of CI/CD technologies:
 - FluxCD
 - Crossplane
 
-see for more info https://products.vshn.ch/appflow/index.html
-
 help you move away from clickops
 
 repeatable
