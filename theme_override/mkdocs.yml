@@ -1,0 +1,9 @@
+site_name: Stakater Actions
+docs_dir: content
+site_url: https://docs.stakater.com/actions/
+repo_url: https://github.com/stakater/actions-docs
+edit_uri: blob/main/content/
+
+nav:
+    - Actions:
+        - index.md

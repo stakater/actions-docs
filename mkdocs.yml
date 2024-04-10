@@ -1,53 +1,80 @@
-site_name: Stakater Actions
 docs_dir: content
-site_url: https://docs.stakater.com/actions/
-repo_url: https://github.com/stakater/actions-docs
 edit_uri: blob/main/content/
-use_directory_urls: false
-strict: true
-theme:
-    name: material
-    logo: assets/images/favicon.svg
-    favicon: assets/images/favicon.svg
-    custom_dir: custom_theme/
-    palette:
-        primary: white
-
-markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
-  - attr_list
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-
 extra:
-    analytics:
-        provider: google
-        property: G-TTH1YYW5TX
-    consent:
-        title: Cookie consent
-        actions:
-            - accept
-            - reject
-            - manage
-        description: >-
-            Stakater uses cookies to recognize your repeated visits and preferences, as well
-            as to measure the effectiveness of our documentation and whether users
-            find what they're searching for. With your consent, you're helping us to
-            make our documentation better.
-
+  analytics:
+    property: G-TTH1YYW5TX
+    provider: google
+  consent:
+    actions:
+    - accept
+    - reject
+    - manage
+    description: We use cookies to recognize your repeated visits and preferences,
+      as well as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to make
+      our documentation better.
+    title: Cookie consent
+  version:
+    default: latest
+    provider: mike
+extra_css:
+- stylesheets/extra.css
+markdown_extensions:
+- admonition
+- pymdownx.details
+- pymdownx.superfences
+- attr_list
+- pymdownx.emoji:
+    emoji_generator: !!python/name:material.extensions.emoji.to_svg ''
+    emoji_index: !!python/name:material.extensions.emoji.twemoji ''
+- toc:
+    permalink: '#'
+    title: On this page
 nav:
-    - Actions:
-        - index.md
-    - Documentation: https://docs.stakater.com/
-    - Stakater Home: https://www.stakater.com/
-    - SAAP: https://www.stakater.com/saap-kubernetes-openshift
-    - Consultancy: https://www.stakater.com/kubernetes-consultancy
-    - Events: https://www.stakater.com/events
-    - Platform Assessment: https://www.stakater.com/kubernetes-platform-assessment
-    - Careers: https://www.stakater.com/careers
-
+- Actions:
+  - index.md
 plugins:
-    - search
+- search
+- mermaid2
+- glightbox
+repo_url: https://github.com/stakater/actions-docs
+site_name: Stakater Actions
+site_url: https://docs.stakater.com/actions/
+theme:
+  cloud_security_alliance_logo_dark: assets/images/CSA_dark.png
+  cloud_security_alliance_logo_light: assets/images/CSA_light.png
+  custom_dir: dist/_theme
+  favicon: assets/images/logo-light.png
+  features:
+  - content.code.copy
+  - navigation.tracking
+  - toc.follow
+  - navigation.top
+  font:
+    code: Space Grotex
+    text: Space Grotex
+  hippa_compliant_logo_dark: assets/images/HC_dark.png
+  hippa_compliant_logo_light: assets/images/HC_light.png
+  logo_dark: assets/images/logo-dark.png
+  logo_light: assets/images/logo-light.png
+  name: material
+  palette:
+  - media: (prefers-color-scheme)
+    toggle:
+      icon: material/brightness-auto
+      name: Switch to system preference
+  - accent: custom
+    media: '(prefers-color-scheme: light)'
+    primary: custom
+    scheme: default
+    toggle:
+      icon: material/brightness-7
+      name: Switch to light mode
+  - accent: custom
+    media: '(prefers-color-scheme: dark)'
+    primary: custom
+    scheme: slate
+    toggle:
+      icon: material/brightness-3
+      name: Switch to dark mode
+use_directory_urls: false

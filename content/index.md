@@ -6,7 +6,7 @@ Stakater engineer the
 
 We create, support, and maintain all kinds of CI/CD technologies:
 
-- Gitlab CI/CD
+- GitLab CI/CD
 - GitHub Actions
 - Tekton
 - CircleCI
@@ -19,10 +19,8 @@ We create, support, and maintain all kinds of CI/CD technologies:
 
 see for more info https://products.vshn.ch/appflow/index.html
 
-
 help you move away from clickops
 
 repeatable
 quality
 secure
-
