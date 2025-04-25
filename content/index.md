@@ -1,13 +1,12 @@
 # Stakater Actions
 
-Stakater engineer the
+Stakater Actions is a consultancy offer, where Stakater will help you create, support, and maintain CI/CD technologies.
 
-- GitLab managed
+Stakater helps you move away from manual work of deploying resources, so called ClickOps, to an automated way with focus is on quality and security.
 
-help you move away from clickops
+Stakater will help you with all kinds of CI/CD technologies:
 
-We create, support, and maintain all kinds of CI/CD technologies:
-
+- Managed GitLab
 - GitLab CI/CD
 - GitHub Actions
 - Tekton
@@ -19,7 +18,3 @@ We create, support, and maintain all kinds of CI/CD technologies:
 - ArgoCD
 - FluxCD
 - Crossplane
-
-repeatable
-quality
-secure
