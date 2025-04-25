@@ -1,4 +1,6 @@
-FROM python:3.12 as builder
+FROM python:3.13 as builder
+
+RUN pip3 install mkdocs-mermaid2-plugin mkdocs-table-reader-plugin mkdocs-include-markdown-plugin mkdocs-video
 
 # set workdir
 RUN mkdir -p $HOME/application
@@ -7,17 +9,10 @@ WORKDIR $HOME/application
 # copy the entire application
 COPY --chown=1001:root . .
 
-RUN pip3 install -r theme_common/requirements.txt
-
-# Combine Theme Resources
-RUN python theme_common/scripts/combine_theme_resources.py theme_common/resources theme_override/resources dist/_theme
-# Produce mkdocs file
-RUN python theme_common/scripts/combine_mkdocs_config_yaml.py theme_common/mkdocs.yml theme_override/mkdocs.yml mkdocs.yml
-
 # build the docs
+RUN chmod +x prepare_theme.sh && ./prepare_theme.sh
 RUN mkdocs build
-
-FROM nginxinc/nginx-unprivileged:1.25-alpine as deploy
+FROM nginxinc/nginx-unprivileged:1.27-alpine as deploy
 COPY --from=builder $HOME/application/site/ /usr/share/nginx/html/actions/
 COPY default.conf /etc/nginx/conf.d/
 

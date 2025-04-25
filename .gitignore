@@ -20,4 +20,7 @@ node_modules
 
 # Build files
 site/
-styles/
+styles
+
+# yml files
+mkdocs.yml
