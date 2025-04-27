@@ -1,2 +1,1 @@
-# actions-docs
-Stakater Actions Documentation
+# Stakater Actions Documentation
